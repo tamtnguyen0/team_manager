@@ -34,7 +34,7 @@ const AddPlayer = () => {
                     <p className='text-left' key={i} style={{color: 'red'}}>{error}</p>
                 ))}
 
-                {input.name.length == 1 ? <p className='text-left' style={{color: 'red'}}>Name must be at least 2 characters long</p> : null}
+                {input.name.length === 1 ? <p className='text-left' style={{color: 'red'}}>Name must be at least 2 characters long</p> : null}
 
                 <form onSubmit={onSubmitHandler}>
                     <input type="text"
